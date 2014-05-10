@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">SensorTest</string>
+    <string name="btn_select">选择</string>
+    <string name="btn_copy">拷贝</string>
+    <string name="btn_clear">清除</string>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="@dimen/main_margin"
+        android:layout_marginRight="@dimen/main_margin"
+        android:layout_marginTop="@dimen/main_margin"
+        android:background="#12345678" >
+
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/white"
+            android:text="@string/btn_select" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/btn_select"
+            android:gravity="left|center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="@dimen/main_margin"
+        android:layout_marginRight="@dimen/main_margin"
+        android:layout_marginTop="@dimen/main_margin"
+        android:background="#12345678" >
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="96dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_copy"
+                android:layout_width="96dp"
+                android:layout_height="48dp"
+                android:layout_weight="1.0"
+                android:background="@android:color/white"
+                android:text="@string/btn_copy" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="96dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/main_margin"
+                android:layout_weight="1.0"
+                android:background="@android:color/white"
+                android:text="@string/btn_clear" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_touch"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_toLeftOf="@id/ll_btn"
+            android:background="#12345678"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lst_result"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
