@@ -123,6 +123,7 @@ public class SensorSDK {
 		boolean exist = false;
 		for (Sensor s : allSensors) {
 			if (s.getType() == type) {
+				exist = true;
 				break;
 			}
 		}
